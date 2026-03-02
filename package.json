@@ -1,0 +1,55 @@
+{
+  "name": "@tracekit/nuxt",
+  "version": "1.0.0",
+  "description": "TraceKit Nuxt integration - Auto-init plugin, useTraceKit composable, and router breadcrumbs",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "@tracekit/browser": "^1.0.0",
+    "nuxt": ">=3.8.0",
+    "vue-router": ">=4.0.0"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^3.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tracekit-Dev/nuxt"
+  },
+  "keywords": [
+    "tracekit",
+    "nuxt",
+    "vue",
+    "error-tracking",
+    "observability",
+    "distributed-tracing"
+  ]
+}
