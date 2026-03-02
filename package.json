@@ -1,6 +1,6 @@
 {
   "name": "@tracekit/nuxt",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "TraceKit Nuxt integration - Auto-init plugin, useTraceKit composable, and router breadcrumbs",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -27,7 +27,7 @@
     "dev": "tsup --watch"
   },
   "peerDependencies": {
-    "@tracekit/browser": "^1.0.0",
+    "@tracekit/browser": "^0.1.1",
     "nuxt": ">=3.8.0",
     "vue-router": ">=4.0.0"
   },
